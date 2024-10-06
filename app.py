@@ -172,41 +172,39 @@ if uploaded_files:
               5 - Neurosciences
               6 - Adult Health
               7 - Renal and Urology
-              8 - Endocrine and Metabolic
-              9 - Ear, Nose and Throat
-              10 - Acute and Emergency
-              11 - General Practice and Primary Healthcare
-              12 - Women's Health
-              13 - Social Work
-              14 - Dentistry
-              15 - Ophthalmology
-              16 - Occupational Health
-              17 - Physical Rehabilitation
-              18 - Social and Population Health
-              19 - Infectious Diseases
-              20 - Clinical Pharmacology and Therapeutics
-              21 - Pediatric
-              22 - ENT
-              23 - Dermatology
-              24 - Obstetrics and Gynaecology
-              25 - Genetics and Genomics
-              26 - Anaesthetic Medicine and Anaesthesia
+              9 - Endocrine and Metabolic
+              10 - Ear, Nose and Throat
+              11 - Acute and Emergency
+              12 - General Practice and Primary Healthcare
+              13 - Clinical Haematology
+              14 - Mental Health
+              15 - Clinical Imaging
+              16 - Ophthalmology
+              17 - Gynaecology
+              18 - Physical Rehabilitation
+              19 - Social and Population Health
+              20 - Infectious Diseases
+              21 - Clinical Pharmacology and Therapeutics
+              22 - Paediatric
+              23 - ENT
+              24 - Dermatology
+              25 - Vaccination
+              26 - Perioperative Medicine and Anaesthesia
               27 - Clinical Biochemistry
               28 - Surgery
               29 - General Surgery
               30 - Obstetrics and Gynaecology
               31 - Genetics and Genomics
-              32 - Anaesthetics
-              33 - Pediatrics
-              34 - Musculoskeletal
-              35 - Cancer
-              36 - Emergency Medicine
-              37 - Palliative and End of Life Care
-              38 - Emergency and Acute Medicine
-              39 - Pain Management
-              40 - Laboratory Haematology
-              41 - Emergency and Acute Medicine
-              42 - Pain Management
+              32 - Sexual Health
+              33 - Endocrine and Metabolic
+              34 - Paediatrics
+              36 - Musculoskeletal
+              37 - Cancer
+              38 - Emergency Medicine
+              39 - Palliative and End of Life Care
+              40 - Emergency and Acute Medicine
+              41 - Pain Management
+              42 - Laboratory Haematology
               46 - Autoimmune and Immunology
               47 - Rheumatology
               48 - Nutrition and Dietetics
@@ -218,6 +216,9 @@ if uploaded_files:
               
               Question Stem:
               A 70-year-old man with a history of hypertension presents with sudden onset of severe chest pain radiating to the back.
+              
+              Lead Question:
+              What is the most likely diagnosis?
               
               Correct Answer ID:
               0
@@ -237,9 +238,7 @@ if uploaded_files:
               Pericarditis often causes sharp chest pain that worsens with inspiration, but does not typically radiate to the back.
               Pneumothorax can cause chest pain, but it typically presents with sudden shortness of breath and is less likely to radiate to the back.
               Module ID:1
-              
-              Lead Question:
-              What is the most likely diagnosis?
+               
               
               You will then convert this into JSON format:
               {{
@@ -265,7 +264,7 @@ if uploaded_files:
                 }}
               }}
               
-              Now, parse the following text and provide the output in the same JSON format, make sure that the moduleId is always an integer. Parse ALL questions in the text, not just the first one:
+              Now, parse the following text and provide the output in the same JSON format, make sure that the moduleId is always an integer. YOU MUST ENSURE THAT THE LEAD-IN QUESTION IS ALWAYS SEPARATED FROM THE QUESTION STEM AND NEVER INCLUDED IN THE QUESTION STEM. Parse ALL questions in the text, not just the first one:
               
               {full_text_content}
               """
