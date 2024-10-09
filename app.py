@@ -165,52 +165,34 @@ if uploaded_files:
               
               You will choose the module id from the list
               
-              1 - Cardiovascular
-              2 - Respiratory
-              3 - Gastrointestinal (Including Liver)
-              4 - Child Health
-              5 - Neurosciences
-              6 - Adult Health
-              7 - Renal and Urology
-              9 - Endocrine and Metabolic
-              10 - Ear, Nose and Throat
-              11 - Acute and Emergency
-              12 - General Practice and Primary Healthcare
-              13 - Clinical Haematology
-              14 - Mental Health
-              15 - Clinical Imaging
-              16 - Ophthalmology
-              17 - Gynaecology
-              18 - Physical Rehabilitation
-              19 - Social and Population Health
-              20 - Infectious Diseases
-              21 - Clinical Pharmacology and Therapeutics
-              22 - Paediatric
-              23 - ENT
-              24 - Dermatology
-              25 - Vaccination
-              26 - Perioperative Medicine and Anaesthesia
-              27 - Clinical Biochemistry
-              28 - Surgery
-              29 - General Surgery
-              30 - Obstetrics and Gynaecology
-              31 - Genetics and Genomics
-              32 - Sexual Health
-              33 - Endocrine and Metabolic
-              34 - Paediatrics
-              36 - Musculoskeletal
-              37 - Cancer
-              38 - Emergency Medicine
-              39 - Palliative and End of Life Care
-              40 - Emergency and Acute Medicine
-              41 - Pain Management
-              42 - Laboratory Haematology
-              46 - Autoimmune and Immunology
-              47 - Rheumatology
-              48 - Nutrition and Dietetics
-              49 - Radiology
-              50 - Oncology
-              55 - Coronavirus
+              1 - Acute and emergency
+              2 - Cancer
+              3 - Cardiovascular
+              4 - Child health
+              5 - Clinical Haematology
+              6 - Clinical imaging
+              7 - Dermatology
+              8 - Ear, nose and throat
+              9 - Endocrine and metabolic
+              10 - Gastrointestinal including liver
+              11 - General practice and primary healthcare
+              12 - Infection
+              13 - Mental health
+              14 - Musculoskeletal
+              15 - Neurosciences
+              16 - Obstetrics and gynaecology
+              17 - Ophthalmo  logy
+              18 - Perioperative medicine and anaesthesia
+              19 - Renal and urology
+              20 - Respiratory
+              21 - Surgery
+              22 - Allergy and immunology
+              23 - Clinical biochemistry
+              24 - Clinical pharmacology and therapeutics
+              25 - Genetics and genomics
+              26 - Laboratory haematology
+              27 - Palliative and end of life care
+              28 - Social and population health
               
               For example:
               
