@@ -203,7 +203,7 @@ if uploaded_files:
               What is the most likely diagnosis?
               
               Correct Answer ID:
-              0
+              3
               
               Answers Array:
               
