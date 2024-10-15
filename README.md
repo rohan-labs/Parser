@@ -1,6 +1,6 @@
 # Automating MCQ Data entry onto Supabase for CEAs
 
-##About
+## About
 Parsing unstructured PDF / DOCX information to JSON objects for SQL storage
 
 ### Run it locally
