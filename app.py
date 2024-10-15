@@ -1,5 +1,3 @@
-# app.py
-
 import os
 import json
 import streamlit as st
@@ -8,42 +6,33 @@ from supabase import create_client, Client
 from io import StringIO
 from tempfile import NamedTemporaryFile
 import time
-
-# Import libraries for file processing
 import PyPDF2
 import docx2txt
 from dotenv import load_dotenv
 
-# Load environment variables from .env file (only in local development)
+# Client / credential set-up
+
 load_dotenv()
 
-# Function to get environment variables safely
 def get_env_variable(var_name):
   try:
-      # First, try to get the variable from Streamlit secrets (for deployment)
       return st.secrets[var_name]
   except Exception:
-      # If not found, fall back to environment variables (for local development)
       return os.getenv(var_name)
 
-# Get API keys and credentials
 openai_api_key = get_env_variable("OPENAI_API_KEY")
 supabase_url = get_env_variable("SUPABASE_URL")
 supabase_key = get_env_variable("SUPABASE_KEY")
-assistant_id = get_env_variable("ASSISTANT_ID")  # Add this line to get the assistant ID
+assistant_id = get_env_variable("ASSISTANT_ID")
 
-# Check if the required variables are available
 if not openai_api_key or not supabase_url or not supabase_key or not assistant_id:
   st.error("API keys, credentials, or assistant ID are not properly set.")
   st.stop()
 
-# Initialize OpenAI client
 client = OpenAI(api_key=openai_api_key)
 
-# Use the provided assistant ID
 st.session_state.assistant = client.beta.assistants.retrieve(assistant_id)
 
-# Initialize messages if not already in session state
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
@@ -103,7 +92,6 @@ uploaded_files = st.file_uploader(
 )
 
 if uploaded_files:
-  # List to store parsed data
   data_list = []
   any_errors = False
 
@@ -142,14 +130,10 @@ if uploaded_files:
 
       # Use OpenAI API to parse the content
       max_retries = 3
-      retry_delay = 5  # seconds
+      retry_delay = 5  
 
       for attempt in range(max_retries):
           try:
-              # Remove this line
-              # max_content_length = 14000  # Adjust this value as needed
-
-              # Replace the truncation line with this
               full_text_content = text_content
 
               # Update the prompt to use full_text_content
@@ -251,15 +235,14 @@ if uploaded_files:
               {full_text_content}
               """
 
-              # Update the OpenAI API call to use a higher max_tokens value
               response = client.chat.completions.create(
-                  model="gpt-4o",  # Make sure this is "gpt-4", not "gpt-4o"
+                  model="gpt-4o", 
                   messages=[
                       {"role": "system", "content": "You are a helpful assistant that extracts information from text and formats it as JSON."},
                       {"role": "user", "content": prompt}
                   ],
                   temperature=0,
-                  max_tokens=None  # This will use the maximum available tokens
+                  max_tokens=None 
               )
               
               # Parse the JSON output from OpenAI
@@ -271,14 +254,12 @@ if uploaded_files:
               # Parse JSON
               parsed_data = json.loads(json_response)
               if isinstance(parsed_data, dict):
-                  # If the parsed data is a dictionary, it means we have multiple question sets
                   for key, question_set in parsed_data.items():
                       data_list.append(question_set)
               else:
-                  # If it's not a dictionary, assume it's a single question set
                   data_list.append(parsed_data)
               st.success(f"Successfully parsed **{file_name}**.")
-              break  # Exit the retry loop if successful
+              break  
           
           except json.JSONDecodeError as json_error:
               if attempt < max_retries - 1:
@@ -292,10 +273,9 @@ if uploaded_files:
           except Exception as e:
               st.error(f"Error processing {file_name}: {e}")
               any_errors = True
-              break  # Exit the retry loop for non-JSON related errors
+              break  
 
   if data_list:
-      # Display parsed data
       st.write("### Parsed Data:")
       st.json(data_list)
 
@@ -305,7 +285,6 @@ if uploaded_files:
           upload_errors = False
           for record in data_list:
               try:
-                  # No need to flatten the record anymore
                   response = supabase.table("mcqQuestions").upsert(
                       record, 
                       on_conflict="questionStem"
