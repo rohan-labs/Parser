@@ -147,36 +147,7 @@ if uploaded_files:
               - moduleId
               - leadQuestion
               
-              You will choose the module id from the list
-              
-              1 - Acute and emergency
-              2 - Cancer
-              3 - Cardiovascular
-              4 - Child health
-              5 - Clinical Haematology
-              6 - Clinical imaging
-              7 - Dermatology
-              8 - Ear, nose and throat
-              9 - Endocrine and metabolic
-              10 - Gastrointestinal including liver
-              11 - General practice and primary healthcare
-              12 - Infection
-              13 - Mental health
-              14 - Musculoskeletal
-              15 - Neurosciences
-              16 - Obstetrics and gynaecology
-              17 - Ophthalmo  logy
-              18 - Perioperative medicine and anaesthesia
-              19 - Renal and urology
-              20 - Respiratory
-              21 - Surgery
-              22 - Allergy and immunology
-              23 - Clinical biochemistry
-              24 - Clinical pharmacology and therapeutics
-              25 - Genetics and genomics
-              26 - Laboratory haematology
-              27 - Palliative and end of life care
-              28 - Social and population health
+              You will categorise each question via the module they come under (the ID number for each question will be provided for you)
               
               You will also categorise the article via presentation in which the number will already be provided to you.
               
