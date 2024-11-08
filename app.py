@@ -178,219 +178,7 @@ if uploaded_files:
               27 - Palliative and end of life care
               28 - Social and population health
               
-              You will also categorise the article via presentation:
-               1. Abdominal distension  
-               2. Abdominal mass  
-               3. Abnormal cervical smear result  
-               4. Abnormal development/developmental delay  
-               5. Abnormal eating or exercising behavior  
-               6. Abnormal involuntary movements  
-               7. Abnormal urinalysis  
-               8. Acute abdominal pain  
-               9. Acute and chronic pain management  
-              10. Acute change in or loss of vision  
-              11. Acute joint pain/swelling  
-              12. Acute kidney injury  
-              13. Acute rash  
-              14. Addiction  
-              15. Allergies  
-              16. Altered sensation, numbness and tingling  
-              17. Amenorrhoea  
-              18. Anaphylaxis  
-              19. Anosmia  
-              20. Anxiety, phobias, OCD  
-              21. Ascites  
-              22. Auditory hallucinations  
-              23. Back pain  
-              24. Behaviour/personality change  
-              25. Behavioural difficulties in childhood  
-              26. Bites and stings  
-              27. Blackouts and faints  
-              28. Bleeding antepartum  
-              29. Bleeding from lower GI tract  
-              30. Bleeding from upper GI tract  
-              31. Bleeding postpartum  
-              32. Bone pain  
-              33. Breast lump  
-              34. Breast tenderness/pain  
-              35. Breathlessness  
-              36. Bruising  
-              37. Burns  
-              38. Cardiorespiratory arrest  
-              39. Change in bowel habit  
-              40. Change in stool color  
-              41. Chest pain  
-              42. Child abuse  
-              43. Chronic abdominal pain  
-              44. Chronic joint pain/stiffness  
-              45. Chronic kidney disease  
-              46. Chronic rash  
-              47. Cold, painful, pale, pulseless leg/foot  
-              48. Complications of labour  
-              49. Confusion  
-              50. Congenital abnormalities  
-              51. Constipation  
-              52. Contraception request/advice  
-              53. Cough  
-              54. Crying baby  
-              55. Cyanosis  
-              56. Death and dying  
-              57. Decreased appetite  
-              58. Decreased/loss of consciousness  
-              59. Dehydration  
-              60. Deteriorating patient  
-              61. Diarrhoea  
-              62. Difficulty with breastfeeding  
-              63. Diplopia  
-              64. Dizziness  
-              65. Driving advice  
-              66. Dysmorphic child  
-              67. Ear and nasal discharge  
-              68. Elation/elated mood  
-              69. Elder abuse  
-              70. Electrolyte abnormalities  
-              71. End of life care/symptoms of terminal illness  
-              72. Epistaxis  
-              73. Erectile dysfunction  
-              74. Eye pain/discomfort  
-              75. Eye trauma  
-              76. Facial pain  
-              77. Facial weakness  
-              78. Facial/periorbital swelling  
-              79. Faecal incontinence  
-              80. Falls  
-              81. Family history of possible genetic disorder  
-              82. Fasciculation  
-              83. Fatigue  
-              84. Fever  
-              85. Fit notes  
-              86. Fits/seizures  
-              87. Fixed abnormal beliefs  
-              88. Flashes and floaters in visual fields  
-              89. Food intolerance  
-              90. Foreign body in eye  
-              91. Frailty  
-              92. Gradual change in or loss of vision  
-              93. Gynaecomastia  
-              94. Haematuria  
-              95. Haemoptysis  
-              96. Head injury  
-              97. Headache  
-              98. Hearing loss  
-              99. Heart murmurs  
-              100. Hoarseness and voice change  
-              101. Hyperemesis  
-              102. Hypertension  
-              103. Immobility  
-              104. Incidental findings  
-              105. Infant feeding problems  
-              106. Intrauterine death  
-              107. Jaundice  
-              108. Labour  
-              109. Lacerations  
-              110. Learning disability  
-              111. Limb claudication  
-              112. Limb weakness  
-              113. Limp  
-              114. Loin pain  
-              115. Loss of libido  
-              116. Loss of red reflex  
-              117. Low blood pressure  
-              118. Low mood/affective problems  
-              119. Lump in groin  
-              120. Lymphadenopathy  
-              121. Massive haemorrhage  
-              122. Melaena  
-              123. Memory loss  
-              124. Menopausal problems  
-              125. Menstrual problems  
-              126. Mental capacity concerns  
-              127. Mental health problems in pregnancy or postpartum  
-              128. Misplaced nasogastric tube  
-              129. Muscle pain/myalgia  
-              130. Musculoskeletal deformities  
-              131. Nail abnormalities  
-              132. Nasal obstruction  
-              133. Nausea  
-              134. Neck lump  
-              135. Neck pain/stiffness  
-              136. Neonatal death or cot death  
-              137. Neuromuscular weakness  
-              138. Night sweats  
-              139. Nipple discharge  
-              140. Normal pregnancy and antenatal care  
-              141. Oliguria  
-              142. Organomegaly  
-              143. Overdose  
-              144. Pain on inspiration  
-              145. Painful ear  
-              146. Painful sexual intercourse  
-              147. Painful swollen leg  
-              148. Pallor  
-              149. Palpitations  
-              150. Pelvic mass  
-              151. Pelvic pain  
-              152. Perianal symptoms  
-              153. Peripheral oedema and ankle swelling  
-              154. Petechial rash  
-              155. Pleural effusion  
-              156. Poisoning  
-              157. Polydipsia (thirst)  
-              158. Post-surgical care and complications  
-              159. Pregnancy risk assessment  
-              160. Prematurity  
-              161. Pressure of speech  
-              162. Pruritus  
-              163. Ptosis  
-              164. Pubertal development  
-              165. Purpura  
-              166. Rectal prolapse  
-              167. Red eye  
-              168. Reduced/change in fetal movements  
-              169. Scarring  
-              170. Scrotal/testicular pain and/or lump/swelling  
-              171. Self-harm  
-              172. Shock  
-              173. Skin lesion  
-              174. Skin or subcutaneous lump  
-              175. Skin ulcers  
-              176. Sleep problems  
-              177. Small for gestational age/large for gestational age  
-              178. Snoring  
-              179. Soft tissue injury  
-              180. Somatisation/medically unexplained physical symptoms  
-              181. Sore throat  
-              182. Speech and language problems  
-              183. Squint  
-              184. Stridor  
-              185. Struggling to cope at home  
-              186. Subfertility  
-              187. Substance misuse  
-              188. Suicidal thoughts  
-              189. Swallowing problems  
-              190. The sick child  
-              191. Threats to harm others  
-              192. Tinnitus  
-              193. Trauma  
-              194. Travel health advice  
-              195. Tremor  
-              196. Unsteadiness  
-              197. Unwanted pregnancy and termination  
-              198. Urethral discharge and genital ulcers/warts  
-              199. Urinary incontinence  
-              200. Urinary symptoms  
-              201. Vaccination  
-              202. Vaginal discharge  
-              203. Vaginal prolapse  
-              204. Vertigo  
-              205. Visual hallucinations  
-              206. Vomiting  
-              207. Vulval itching/lesion  
-              208. Vulval/vaginal lump  
-              209. Weight gain  
-              210. Weight loss  
-              211. Wellbeing checks  
-              212. Wheeze
+              You will also categorise the article via presentation in which the number will already be provided to you.
               
               For example:
               
@@ -418,7 +206,8 @@ if uploaded_files:
               Pericarditis often causes sharp chest pain that worsens with inspiration, but does not typically radiate to the back.
               Pneumothorax can cause chest pain, but it typically presents with sudden shortness of breath and is less likely to radiate to the back.
               Module ID: 1
-              Presentation ID: 41 
+              Presentation ID 1: 41
+              Presentation ID 2: 23
               
               You will then convert this into JSON format:
               {{
@@ -441,6 +230,7 @@ if uploaded_files:
                   ],
                   "moduleId": 1,
                   "presentationId: 41,
+                  "presentationId2: 23,
                   "leadQuestion": "What is the most likely diagnosis?"
                 }}
               }}
