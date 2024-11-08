@@ -218,9 +218,7 @@ if uploaded_files:
                   messages=[
                       {"role": "system", "content": "You are a helpful assistant that extracts information from text and formats it as JSON."},
                       {"role": "user", "content": prompt}
-                  ],
-                  temperature=0,
-                  max_tokens=None 
+                  ]
               )
               
               # Parse the JSON output from OpenAI
