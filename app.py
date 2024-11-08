@@ -231,7 +231,7 @@ if uploaded_files:
               }}
               
               Now, parse the following text and provide the output in the same JSON format, make sure that the moduleId is always an integer. YOU MUST ENSURE THAT THE LEAD-IN QUESTION IS ALWAYS SEPARATED FROM THE QUESTION STEM AND NEVER INCLUDED IN THE QUESTION STEM. Parse ALL questions in the text, not just the first one:
-              
+              You MUST ENSURE EVERY SINGLE PEICE OF INFORMATION AND EVERY SINGLE WORD IS RETAINED. YOU ARE A PARSER SO YOU MUST INLCUDE EVERYTHING PROVIDED IN THE DOCUMENT.
               {full_text_content}
               """
 
