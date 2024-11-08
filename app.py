@@ -214,7 +214,7 @@ if uploaded_files:
               """
 
               response = client.chat.completions.create(
-                  model="o1-mini", 
+                  model="gpt-4o", 
                   messages=[
                       {"role": "system", "content": "You are a helpful assistant that extracts information from text and formats it as JSON."},
                       {"role": "user", "content": prompt}
