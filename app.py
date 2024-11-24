@@ -144,14 +144,15 @@ if uploaded_files:
               - correctAnswerId
               - answersArray (as a list)
               - explanationList (as a list)
+              - conditionName
               - moduleId
               - leadQuestion
               - presentationId
               - presentationId2
               
               You will categorise each question via the module they come under (the ID number for each question will be provided for you)
-              
-              You will also categorise the article via presentation in which the number will already be provided to you.
+              You will categorise the article via presentation in which the number will already be provided to you.
+              You will also provide the medical condition name that the question is related to in the conditionName field.
               
               For example:
               
@@ -171,6 +172,7 @@ if uploaded_files:
               Pulmonary embolism
               Pericarditis
               Pneumothorax
+              
               Explanation List:
               
               Aortic dissection is most likely given the description of severe chest pain radiating to the back, a hallmark of this condition.
@@ -178,6 +180,8 @@ if uploaded_files:
               Pulmonary embolism may cause chest pain but is usually associated with shortness of breath.
               Pericarditis often causes sharp chest pain that worsens with inspiration, but does not typically radiate to the back.
               Pneumothorax can cause chest pain, but it typically presents with sudden shortness of breath and is less likely to radiate to the back.
+              
+              conditionName: Aortic dissection
               Module ID: 1
               Presentation ID 1: 41
               Presentation ID 2: 23
@@ -201,9 +205,10 @@ if uploaded_files:
                     "D. Pericarditis - Incorrect Answer: Pericarditis often causes sharp chest pain that worsens with inspiration, but does not typically radiate to the back.",
                     "E. Pneumothorax - Incorrect Answer: Pneumothorax can cause chest pain, but it typically presents with sudden shortness of breath and is less likely to radiate to the back."
                   ],
+                  "conditionName": "Aortic dissection",
                   "moduleId": 1,
-                  "presentationId: 41,
-                  "presentationId2: 23,
+                  "presentationId": 41,
+                  "presentationId2": 23,
                   "leadQuestion": "What is the most likely diagnosis?"
                 }}
               }}
