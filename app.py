@@ -181,7 +181,7 @@ if uploaded_files:
               Pericarditis often causes sharp chest pain that worsens with inspiration, but does not typically radiate to the back.
               Pneumothorax can cause chest pain, but it typically presents with sudden shortness of breath and is less likely to radiate to the back.
               
-              conditionName: Aortic dissection
+              conditionName: 7
               Module ID: 1
               Presentation ID 1: 41
               Presentation ID 2: 23
@@ -205,7 +205,7 @@ if uploaded_files:
                     "D. Pericarditis - Incorrect Answer: Pericarditis often causes sharp chest pain that worsens with inspiration, but does not typically radiate to the back.",
                     "E. Pneumothorax - Incorrect Answer: Pneumothorax can cause chest pain, but it typically presents with sudden shortness of breath and is less likely to radiate to the back."
                   ],
-                  "conditionName": "Aortic dissection",
+                  "conditionName": 7,
                   "moduleId": 1,
                   "presentationId": 41,
                   "presentationId2": 23,
