@@ -1,9 +1,9 @@
-# Automating MCQ Data entry onto Supabase for CEAs
+# Automating MCQ Data entry onto Supabase
 
 ## About
-Parsing unstructured PDF / DOCX information to JSON objects for SQL storage
+Parsing unstructured PDF / DOCX documents (containing MCQ exam questions) to JSON objects for SQL storage.
 - 1 - Run it locally
-- 2 - Upload sample document
+- 2 - Upload sample document (con 
 - 3 - Once parsed to JSON click upload to Supabase
 
 ### Run it locally
