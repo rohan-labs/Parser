@@ -4,3 +4,4 @@ supabase
 PyPDF2
 docx2txt
 python-dotenv
+PyMuPDF
