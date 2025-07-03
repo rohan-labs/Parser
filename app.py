@@ -425,7 +425,7 @@ if uploaded_files:
                 - Ignore any "why the question is difficult" sections
                 - INCLUDE ALL EXPLANATION DETAILS - never summarize
                 - RETAIN EVERY WORD AND PARAGRAPH from the document
-                - Make sure moduleId, conditionName, presentationId, presentationId2 are always an integer
+                - Make sure moduleId, conditionName, presentationId, presentationId2 are always an interger
                 - Pay attention to any image references in the text and set hasImage/imagePosition accordingly
                 
                 Text to parse:
@@ -433,7 +433,7 @@ if uploaded_files:
                 """
 
                 response = client.chat.completions.create(
-                    model="gpt-4o", 
+                    model="gpt-4.1", 
                     messages=[
                         {"role": "system", "content": "You are a precise JSON parser that extracts MCQ data while preserving all content and identifying image associations."},
                         {"role": "user", "content": prompt}
