@@ -427,6 +427,7 @@ if uploaded_files:
                 - RETAIN EVERY WORD AND PARAGRAPH from the document
                 - Make sure moduleId, conditionName, presentationId, presentationId2 are always an interger
                 - Pay attention to any image references in the text and set hasImage/imagePosition accordingly
+                - IF THERE IS NO INFORMATION REGARDING PRESENTATION ID, MAKE THIS NULL (not 0) it must be NULL
                 
                 Text to parse:
                 {text_content}
